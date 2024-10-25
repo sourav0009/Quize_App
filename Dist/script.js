@@ -34,6 +34,9 @@ const question = [
             {text: "Heap memory", correct: true},
             {text: "Random storage space", correct: false},
         ]
-    },
-    
-]
+    }
+];
+
+const questionElement = document.getElementById("question");
+const answerButton = document.getElementById("answer-button");
+const nextButton = document.getElementById("next-btn");
