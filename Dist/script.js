@@ -17,4 +17,14 @@ const question = [
             {text: "0xnf029L", correct: true},
         ]
     },
+    {
+        question:" Which package contains the Random class?",
+        answere: [
+            {text: "java.util package", correct: true},
+            {text: "java.lang package", correct: false},
+            {text: "java.awt package", correct: false},
+            {text: "java.io package", correct: false},
+        ]
+    },
+    
 ]
