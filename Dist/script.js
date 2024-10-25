@@ -4,8 +4,8 @@ const question = [
         answere: [
             {text: "Dynamic", correct: false},
             {text: "Architecture Neutral", correct: false},
-            {text: "Use of pointers", correct: false},
-            {text: "Object-oriented", correct: true},
+            {text: "Use of pointers", correct: true},
+            {text: "Object-oriented", correct: false},
         ]
     },
     {
@@ -24,6 +24,15 @@ const question = [
             {text: "java.lang package", correct: false},
             {text: "java.awt package", correct: false},
             {text: "java.io package", correct: false},
+        ]
+    },
+    {
+        question:"  In which memory a String is stored, when we create a string using new operator?",
+        answere: [
+            {text: "Stack", correct: false},
+            {text: "String memory", correct: false},
+            {text: "Heap memory", correct: true},
+            {text: "Random storage space", correct: false},
         ]
     },
     
