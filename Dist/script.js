@@ -34,6 +34,42 @@ const questions = [
             { text: "Heap memory", correct: true },
             { text: "Random storage space", correct: false },
         ]
+    },
+    {
+        question: "Which package contains the Random class?",
+        answers: [
+            { text: "java.util package", correct: true },
+            { text: "java.lang package", correct: false },
+            { text: "java.awt package", correct: false },
+            { text: "java.io package", correct: false },
+        ]
+    },
+    {
+        question: "Which package contains the Random class?",
+        answers: [
+            { text: "java.util package", correct: true },
+            { text: "java.lang package", correct: false },
+            { text: "java.awt package", correct: false },
+            { text: "java.io package", correct: false },
+        ]
+    },
+    {
+        question: "Which package contains the Random class?",
+        answers: [
+            { text: "java.util package", correct: true },
+            { text: "java.lang package", correct: false },
+            { text: "java.awt package", correct: false },
+            { text: "java.io package", correct: false },
+        ]
+    },
+    {
+        question: "Which package contains the Random class?",
+        answers: [
+            { text: "java.util package", correct: true },
+            { text: "java.lang package", correct: false },
+            { text: "java.awt package", correct: false },
+            { text: "java.io package", correct: false },
+        ]
     }
 ];
 
@@ -60,21 +96,25 @@ function showQuestion() {
         const button = document.createElement("button");
         button.innerText = answer.text;
         button.classList.add(
-            "font-medium", 
-            "w-full", 
-            "border", 
-            "p-2", 
-            "text-left", 
-            "transition", 
-            "duration-300", 
+            "font-medium",
+            "w-full",
+            "border",
+            "p-2",
+            "text-left",
+            "transition",
+            "duration-300",
             "rounded-sm",
             "hover:bg-black",
-            "hover:text-white" 
+            "hover:text-white"
 
         );
         button.dataset.correct = answer.correct; // Set correct answer data
-        button.addEventListener("click", selectAnswer);
         answerButtons.appendChild(button);
+
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
     });
 }
 
@@ -100,12 +140,13 @@ function selectAnswer(e) {
             button.classList.add("bg-red-500"); // Incorrect answers in red
         }
     });
+   
 
     // Update score if the selected answer is correct
     if (isCorrect) {
         score++;
     }
-    
+
     // Show the next button
     nextButton.classList.remove("hidden");
 }
@@ -119,5 +160,6 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 });
+
 
 startQuiz();
