@@ -61,10 +61,9 @@ function showQuestion() {
         button.innerText = answer.text;
         button.classList.add(
             "font-medium", 
-            "w-[100%]", 
+            "w-full", 
             "border", 
             "p-2", 
-            "mt-5", 
             "text-left", 
             "transition", 
             "duration-300", 
@@ -91,6 +90,7 @@ function selectAnswer(e) {
     Array.from(answerButtons.children).forEach(button => {
         button.disabled = true; // Disable buttons to prevent additional clicks
         button.classList.add("text-black"); // Ensure text color is set to black
+
         if (button.dataset.correct === "true") {
             button.classList.add("bg-green-500"); // Correct answer in green
         } else {
