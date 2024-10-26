@@ -54,19 +54,19 @@ const questions = [
         ]
     },
     {
-        question: "Which package contains the Random class?",
+        question: "Which of these is used in JavaScript for calling a method or a function?",
         answers: [
-            { text: "java.util package", correct: true },
-            { text: "java.lang package", correct: false },
-            { text: "java.awt package", correct: false },
-            { text: "java.io package", correct: false },
+            { text: "Functional Expression", correct: false },
+            { text: "Property Access Expression", correct: false },
+            { text: "Primary Expression", correct: false },
+            { text: " Invocation Expression", correct: true },
         ]
     },
     {
-        question: "Which package contains the Random class?",
+        question: "Which of these operators are used for checking if a specific property exists?",
         answers: [
-            { text: "java.util package", correct: true },
-            { text: "java.lang package", correct: false },
+            { text: "in", correct: true },
+            { text: "within", correct: false },
             { text: "java.awt package", correct: false },
             { text: "java.io package", correct: false },
         ]
