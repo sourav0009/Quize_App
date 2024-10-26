@@ -67,8 +67,8 @@ const questions = [
         answers: [
             { text: "in", correct: true },
             { text: "within", correct: false },
-            { text: "java.awt package", correct: false },
-            { text: "java.io package", correct: false },
+            { text: "exist", correct: false },
+            { text: "exists", correct: false },
         ]
     }
 ];
