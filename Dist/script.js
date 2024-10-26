@@ -36,12 +36,12 @@ const questions = [
         ]
     },
     {
-        question: "Which package contains the Random class?",
+        question: "Which of these is the correct way in which we can call the JavaScript code?",
         answers: [
-            { text: "java.util package", correct: true },
-            { text: "java.lang package", correct: false },
-            { text: "java.awt package", correct: false },
-            { text: "java.io package", correct: false },
+            { text: "Triggering Event", correct: false },
+            { text: "Preprocessor", correct: false },
+            { text: "Function/Method", correct: true },
+            { text: " RMI", correct: false },
         ]
     },
     {
