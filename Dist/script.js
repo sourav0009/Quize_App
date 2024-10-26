@@ -45,12 +45,12 @@ const questions = [
         ]
     },
     {
-        question: "Which package contains the Random class?",
+        question: "In JavaScript, what do we use for calling the expression for function definition?",
         answers: [
-            { text: "java.util package", correct: true },
-            { text: "java.lang package", correct: false },
-            { text: "java.awt package", correct: false },
-            { text: "java.io package", correct: false },
+            { text: "Function literal", correct: true },
+            { text: "Function prototype", correct: false },
+            { text: "Function declaration", correct: false },
+            { text: "Function calling", correct: false },
         ]
     },
     {
