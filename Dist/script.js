@@ -67,7 +67,10 @@ function showQuestion() {
             "text-left", 
             "transition", 
             "duration-300", 
-            "rounded-sm"
+            "rounded-sm",
+            "hover:bg-black",
+            "hover:text-white" 
+
         );
         button.dataset.correct = answer.correct; // Set correct answer data
         button.addEventListener("click", selectAnswer);
